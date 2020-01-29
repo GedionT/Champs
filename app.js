@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // routes setup
-app.use('/', require(path.join(__dirname, 'router')));
+app.use('/', require('./routes'));
 
 // error handler
 app.use(errorHandler);
