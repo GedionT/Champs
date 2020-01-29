@@ -14,6 +14,3 @@ module.exports = {
     User    : require('../src/users/userModel'),
     Items   : require('../src/items/itemModel')
 }
-var app = express();
-
-// view engine setup
