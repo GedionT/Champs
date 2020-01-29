@@ -1,19 +1,16 @@
 {
   "name": "champs",
-  "version": "1.0.0",
-  "description": "Clothing store",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha"
+    "start": "node ./bin/www"
   },
-  "author": "GedionT",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "mocha": "^7.0.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }
