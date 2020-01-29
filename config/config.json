@@ -1,0 +1,4 @@
+{
+    "connectionString": "mongodb://localhost/Champs",
+    "secret": "for testing token s3Cr3t!@k"
+}
