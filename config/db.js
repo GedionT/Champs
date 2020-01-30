@@ -6,7 +6,7 @@ const User = require('../src/users/userModel');
 const Items = require('../src/items/itemModel');
 
 // eslint-disable-next-line max-len
-mongoose.connect(process.env.MONGODB_URI || config.connectionString, { userCreateIndex: true, userNewUrlParse: true, useUnifiedTopology: true});
+mongoose.connect(process.env.MONGODB_URI || config.connectionString, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = global.Promise;
 
 // Get current connected Database

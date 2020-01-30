@@ -6,7 +6,7 @@ const { Schema } = mongoose;
 const userSchema = new Schema({
 
   username: {
-    type: String, lowercase: true, required: true, match: [/^[a-zA-Z0-9]+$/, 'is invalid'], index: true
+    type: String, lowercase: true, required: true, match: [/^[a-zA-Z0-9]+$/, 'is invalid']
   },
   phone: {
     type: String, required: true
