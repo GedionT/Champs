@@ -1,5 +1,9 @@
+/* eslint-disable comma-dangle */
 const mongoose = require('mongoose');
 const config = require('./config.json');
+
+const User = require('../src/users/userModel');
+const Items = require('../src/items/itemModel');
 
 // eslint-disable-next-line max-len
 mongoose.connect(process.env.MONGODB_URI || config.connectionString, { userCreateIndex: true, userNewUrlParse: true, useUnifiedTopology: true});
@@ -15,6 +19,6 @@ db.on('error', console.error.bind(console, 'connection error: '));
 db.once('open', () => console.log('Connected to the Database'));
 
 module.exports = {
-  User: require('../src/users/userModel'),
-  Items: require('../src/items/itemModel')
+  User,
+  Items
 };
